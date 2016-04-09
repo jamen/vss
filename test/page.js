@@ -1,16 +1,16 @@
 var vss = require('../lib');
+var $ = require('jquery');
 
-document.addEventListener('DOMContentLoaded', function() {
-  var inp = document.getElementById('inp');
-  var styles = document.getElementById('styles');
-
+$(function() {
   var css = vss({
-    el: styles
+    el: $('#vss')[0],
+    data: {
+      width: '100px'
+    }
   });
 
-  css.test = '100';
-
-  inp.onkeyup = function() {
-    css.test = inp.value;
-  };
+  var input = $('#input');
+  input.on('keyup', function() {
+    css.width = input.val();
+  });
 });

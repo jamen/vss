@@ -19,6 +19,4 @@ create(function(req, res) {
 del(['out.js']);
 var write = fs.createWriteStream(path.join(__dirname, '/out.js'));
 var build = browserify([path.join(__dirname, 'page.js')]);
-build.bundle().pipe(write).on('end', function() {
-  console.log('Browserify finished');
-});
+build.bundle().pipe(write);
