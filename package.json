@@ -1,7 +1,7 @@
 {
   "name": "vss",
   "author": "Jamen Marzonie",
-  "version": "0.1.0-0",
+  "version": "0.1.0-1",
   "description": "Data-bound CSS.",
   "main": "lib",
   "repository": {
