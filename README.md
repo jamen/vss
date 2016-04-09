@@ -12,7 +12,7 @@ $('#btn').on('click', function() {
   css.width += 100;
 });
 ```
-```
+```sass
 .foo {
   width: #{width}px;
 }
