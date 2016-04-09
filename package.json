@@ -1,7 +1,7 @@
 {
   "name": "vss",
   "author": "Jamen Marzonie",
-  "version": "0.1.0-1",
+  "version": "0.1.0-2",
   "description": "Use VSS (Virtual Style Sheets) to enable data-binding with CSS.",
   "main": "lib",
   "repository": {
