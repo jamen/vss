@@ -5,7 +5,7 @@ VSS provides a _virtual style sheet_ system based on top of `EventEmitter` and [
 
 ```sass
 .foo {
-  width: ${bar}px;
+  width: #{bar}px;
 }
 ```
 ```javascript
@@ -21,7 +21,7 @@ $(() => {
 You can also smoothen up transitions:
 ```
 .foo {
-  width: ${bar}px;
+  width: #{bar}px;
   transition: width 300ms;
 }
 ```
