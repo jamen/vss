@@ -1,5 +1,32 @@
 # vss
-> Data-bound CSS.
+> Use VSS (Virtual Style Sheets) to enable data-binding with CSS.
+
+VSS provides a _virtual style sheet_ system based on top of `EventEmitter` and [`sem`](https://github.com/jamen/sem).  This gives you a data-binding interface with CSS.
+
+```sass
+.foo {
+  width: ${bar}px;
+}
+```
+```javascript
+const vss = require('vss');
+const $ = require('jquery');
+
+$(() => {
+  const css = vss.register({ bar: '50px' });
+  css.bar = '100px';
+});
+```
+
+You can also smoothen up transitions:
+```
+.foo {
+  width: ${bar}px;
+  transition: width 300ms;
+}
+```
+
+Use inside of browser with [Browserify](https://npmjs.com/browserify) or [Webpack](https://npmjs.com/webpack).
 
 ## Installation
 ```shell

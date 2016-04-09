@@ -2,7 +2,7 @@
   "name": "vss",
   "author": "Jamen Marzonie",
   "version": "0.1.0-1",
-  "description": "Data-bound CSS.",
+  "description": "Use VSS (Virtual Style Sheets) to enable data-binding with CSS.",
   "main": "lib",
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "async-each": "^1.0.0",
+    "async-waterfall": "^0.1.5",
+    "browser-request": "^0.3.3",
     "buffer": "^4.5.1",
     "sem": "^0.1.1"
   }
