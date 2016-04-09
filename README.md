@@ -1,7 +1,7 @@
-# vss
-> Use VSS (Virtual Style Sheets) to enable data-binding with CSS.
+# Virtual Style Sheets
+> Data-binding in JavaScript and CSS.
 
-VSS provides a _virtual style sheet_ system based on top of `EventEmitter` and [`sem`](https://github.com/jamen/sem).  This gives you a data-binding interface with CSS.
+Virtual Style Sheets (vss) provides a system based on top of [`sem`](https://github.com/jamen/sem) and `EventEmitter` that gives you a data-binding interface with CSS.  With this, you can easily script your styles dynamically while on top of an easy to use API.
 
 ```javascript
 var css = vss.link($('#style')[0], {
@@ -29,6 +29,7 @@ $ npm install --save vss
 ```javascript
 var vss = require('vss');
 ```
+#### **Notice:** Vss is in early stages. It is not to be used in any sort of production environment [until `v1` is reached][v1].
 
 ## Credits
 | ![jamen][avatar] |
@@ -37,3 +38,4 @@ var vss = require('vss');
 
   [avatar]: https://avatars.githubusercontent.com/u/6251703?v=3&s=125
   [github]: https://github.com/jamen
+  [v1]: https://github.com/jamen/vss/milestones/v1
