@@ -29,7 +29,7 @@ $ npm install --save vss
 ```javascript
 var vss = require('vss');
 ```
-#### **Notice:** Vss is in early stages. It is not to be used in any sort of production environment [until `v1` is reached][v1].
+**Notice:** Vss is in early stages. It is not to be used in any sort of production environment [until `v1` is reached][v1].
 
 ## Credits
 | ![jamen][avatar] |
