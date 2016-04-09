@@ -1,0 +1,30 @@
+{
+  "name": "vss",
+  "author": "Jamen Marzonie",
+  "version": "0.1.0-0",
+  "description": "Data-bound CSS.",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamen/vss"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "private": false,
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "del": "^2.2.0",
+    "eslint": "^2.7.0",
+    "eslint-config-google": "^0.4.0",
+    "node-static": "^0.7.7"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "buffer": "^4.5.1",
+    "sem": "^0.1.1"
+  }
+}
