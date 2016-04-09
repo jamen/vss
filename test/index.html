@@ -1,22 +1,13 @@
 <html>
   <head>
     <script src='out.js'></script>
-    <link type='text/vss' href='../test.vss' rel='stylesheet'>
     <style class='hide'>style, head { display: block !important; } style.hide { display: none !important; }</style>
+    <link href='test.vss' type='text/vss' rel='stylesheet' id='styler'>
   </head>
 
   <body>
-    <input id='w' placeholder='Width' />
-    <input id='h' placeholder='Height' />
+    <input id='width' placeholder='Width' />
+    <input id='height' placeholder='Height' />
     <div class='test'></div>
-
-    <style type='text/vss'>
-      .test {
-        height: #{height};
-        width: #{width};
-        background-color: black;
-        transition:all 500ms;
-      }
-    </style>
   </body>
 </html>

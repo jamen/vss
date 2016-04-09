@@ -3,26 +3,18 @@
 
 VSS provides a _virtual style sheet_ system based on top of `EventEmitter` and [`sem`](https://github.com/jamen/sem).  This gives you a data-binding interface with CSS.
 
-```sass
-.foo {
-  width: #{bar}px;
-}
-```
 ```javascript
-const vss = require('vss');
-const $ = require('jquery');
+var css = vss.link($('#style')[0], {
+  width: 100
+});
 
-$(() => {
-  const css = vss.register({ bar: '50px' });
-  css.bar = '100px';
+$('#btn').on('click', function() {
+  css.width += 100;
 });
 ```
-
-You can also smoothen up transitions:
 ```
 .foo {
-  width: #{bar}px;
-  transition: width 300ms;
+  width: #{width}px;
 }
 ```
 

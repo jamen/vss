@@ -1,21 +1,20 @@
-var register = require('../lib').register;
+var vss = require('../lib');
 var $ = require('jquery');
 
 $(function() {
-  // Registering all type="text/vss" elements.
-  register({data: {
-    height: '50px',
-    width: '50px'
-  }}, function(vss) {
-    // Setup example data-binding.
-    var w = $('#w');
-    w.on('keyup', function() {
-      vss.width = w.val();
+  vss.linkAjax({
+    url: 'test.vss',
+    width: '50px',
+    height: '50px'
+  }, function(error, css) {
+    var width = $('#width');
+    width.on('keyup', function() {
+      css.width = width.val();
     });
 
-    var h = $('#h');
-    h.on('keyup', function() {
-      vss.height = h.val();
+    var height = $('#height');
+    height.on('keyup', function() {
+      css.height = height.val();
     });
   });
 });

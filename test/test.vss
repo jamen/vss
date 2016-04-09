@@ -1,3 +1,6 @@
 .test {
-  backgroud-color: green !important;
+  height: #{height};
+  width: #{width};
+  background-color: black;
+  transition:all 500ms;
 }

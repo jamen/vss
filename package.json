@@ -27,8 +27,10 @@
   "dependencies": {
     "async-each": "^1.0.0",
     "async-waterfall": "^0.1.5",
+    "balanced-match": "^0.4.0",
     "browser-request": "^0.3.3",
     "buffer": "^4.5.1",
+    "css": "^2.2.1",
     "sem": "^0.1.1"
   }
 }
